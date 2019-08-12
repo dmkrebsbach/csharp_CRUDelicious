@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    margin: 50px auto 10px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+h3 {
+    width: 28%;
+    display: inline-block;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.dishes {
+    font-size: 20px;
+}
+
+.dishes p {
+    margin: 4px auto;
+    text-align: center;
+}
+
+.formBox {
+    width: 40%;
+    margin: 5px auto;
+    border: 5px solid gray;
+    display: inline-block'
+}
+
+.formBox label, input, select, textarea {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.formBox textarea {
+    width: 237px;
+    height: 100px;
+}
+
+.dishDisplay h1, h2{
+    display: block;
+    text-align: center;
+
+}
+
+.dishDisplay p{
+    display: block;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 20px auto;
+    width: 30%;
+}
+
+.dishDisplay h4 {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    margin: 10px;
+}
+
+.dishDisplay h4 span {
+    font-weight: bold;
+    
+}
+
+.buttonRow {
+    display: block;
+    width: 25%;
+    margin: 25px auto;
+}
+
+.buttonRow a {
+    width: 33%;
+    margin: 5px 10%;
+}

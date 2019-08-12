@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CRUDelicious</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="~/css/style.css">
+	</head>
+    <body>
+        <div class="container">
+        @model Dish
+        <div class="dishDisplay">
+                <h1>@Model.Name</h1>
+                <h2>By: Chef @Model.Chef</h2>
+                <p>@Model.Description</p>
+                <h4><span>Calories: </span> @Model.Calories kCal</h4>
+                <h4><span>Tastiness: </span> @Model.Tastiness / 5</h4>
+            </div>
+
+            <div class="buttonRow">
+                <a class="button" href="/">Home</a>
+                <a class="button" href="/edit/@Model.DishId">Edit</a>
+                <a class="button" href="/destroy/@Model.DishId">Delete</a>
+            </div>
+        </div>
+        
+    </body>
+</html>

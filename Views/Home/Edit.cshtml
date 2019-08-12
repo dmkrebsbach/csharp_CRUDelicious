@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CRUDelicious</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="~/css/style.css">
+	</head>
+    <body>
+        <div class="container">
+            <h1>Add a New Dish!</h1>
+            <h1><a href="/">Home</a></h1>
+            <div class="formBox">
+                @model Dish
+                <form asp-action="UpdateDish" asp-controller="Home" method="post">
+                    
+                    <label asp-for="Chef">Chef's Name: </label>
+                    <input type="text" asp-for="Chef" placeholder="@Model.Chef">
+
+                    <label asp-for="Name">Dish Name:</label>
+                    <input type="text" asp-for="Name" placeholder="@Model.Name">
+
+                    <label asp-for="Calories">Calories In Dish:</label>
+                    <input type="text" asp-for="Calories" placeholder="@Model.Calories">
+
+                    <label asp-for="Tastiness">Tastiness: (out of 5)</label>
+                    <select asp-for="Tastiness">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <label asp-for="Description">Description: </label>
+                    <textarea asp-for="Description">@Model.Description</textarea>
+
+                    <input type="hidden" asp-for="DishId" value="@Model.DishId">
+
+                    <input type="submit" value="Update">
+                </form>
+            </div>
+            <div class="formBoxM">
+                    <span asp-validation-for="Chef"></span>
+                    <span asp-validation-for="Name"></span>
+                    <span asp-validation-for="Calories"></span>
+                    <span asp-validation-for="Tastiness"></span>
+                    <span asp-validation-for="Description"></span>
+            </div>
+        </div>
+        
+    </body>
+</html>
