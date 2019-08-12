@@ -49,6 +49,18 @@ h3 {
     display: inline-block'
 }
 
+.formBoxM {
+    width: 40%;
+    margin: 5px auto;
+    display: inline-block'
+}
+
+.formBoxM span {
+    display: block;
+    text-align: center;
+    color: red;
+}
+
 .formBox label, input, select, textarea {
     display: block;
     margin: 10px auto;

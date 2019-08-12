@@ -44,7 +44,7 @@ namespace CRUDelicious.Controllers
             }
             else
             {
-                return View("NewDish");
+                return View("New");
             }
         }
 
@@ -77,7 +77,7 @@ namespace CRUDelicious.Controllers
             }
             else
             {
-                return View("Edit");
+                return View("Edit", updateDish);
             }
         }
 
